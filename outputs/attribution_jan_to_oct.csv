@@ -1,0 +1,9 @@
+,base price (EUR/MWh),gas burn (mcm/d)
+Jan,100.88,60.58
+Oct,138.63,26.04
+change,37.75,-34.54
+from gas,52.21,-17.66
+from coal + FX,2.18,0.00
+from EUA,-1.03,0.00
+"from load, renewables, availability",-15.46,-19.08
+interaction / residual,-0.16,2.21

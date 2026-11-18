@@ -1,0 +1,28 @@
+InterviewTask - German power stack - data dictionary
+Period: 2026-01-01 to 2026-11-12. All times CET (German local time; CEST in summer, UTC offset shown).
+
+load_wind_solar_DE_hourly_2026.csv (hourly, Germany/Luxembourg, actuals)
+  timestamp_cet                                          start of hour
+  load_mw, wind_onshore_mw, wind_offshore_mw, solar_mw   MW (hourly average)
+
+availability_DE_hourly_2026.csv (hourly available capacity by plant, MW)
+  timestamp_cet                                          start of hour
+  lignite_plant_1_mw, lignite_plant_2_mw, hard_coal_plant_1_mw, hard_coal_plant_2_mw, gas_plant_1_mw, gas_plant_2_mw
+
+max_availability_2026.csv
+  plant, max_available_mw                                highest hourly available capacity of each plant, MW
+
+fuel_prices_daily_2026.csv (settlements by trade date; weekdays only, on exchange holidays the previous value may repeat)
+  gas_eur_mwh   gas, EUR/MWh thermal
+  eua_eur_t     EU carbon allowance, EUR/t CO2
+  coal_usd_t    coal, USD/t
+  eurusd        USD per EUR
+
+stack_plants.csv (one row per plant; plant 1 = more efficient, plant 2 = less efficient)
+  efficiency             MWh electric per MWh thermal
+  co2_t_per_mwh_th       tonnes CO2 per MWh thermal
+  vom_eur_mwh            variable O&M, EUR per MWh electric
+  fuel_cost_eur_mwh_th   how to get the fuel cost (coal: coal_usd_t / eurusd / 6.98 MWh_th per tonne;
+                         lignite: blank, no traded price - make your own assumption)
+
+Must-run: 8 GW at the bottom of the stack (see brief).

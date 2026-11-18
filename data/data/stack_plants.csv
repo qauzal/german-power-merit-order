@@ -1,0 +1,7 @@
+plant,fuel,efficiency,co2_t_per_mwh_th,vom_eur_mwh,fuel_cost_eur_mwh_th
+lignite_plant_1,Lignite,0.43,0.364,3,
+lignite_plant_2,Lignite,0.37,0.364,3,
+hard_coal_plant_1,Hard coal,0.46,0.341,3,coal_usd_t / eurusd / 6.98
+hard_coal_plant_2,Hard coal,0.4,0.341,3,coal_usd_t / eurusd / 6.98
+gas_plant_1,Gas,0.6,0.202,2,gas_eur_mwh
+gas_plant_2,Gas,0.45,0.202,2,gas_eur_mwh
